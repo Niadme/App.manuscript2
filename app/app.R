@@ -5,7 +5,7 @@ library(tidyverse)
 
 
 # read in data
-data <- read_excel("/Users/ad2151me/repos/shiny_app/datafile.xlsx") %>% 
+data <- read_excel("../datafile.xlsx") %>% 
   select("context", "M_DERS_total") %>%
   mutate(
     M_DERS_total = na_if(M_DERS_total, "NA"),
